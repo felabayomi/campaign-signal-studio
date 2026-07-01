@@ -1,0 +1,21 @@
+{
+  "name": "Campaign Signal Studio",
+  "short_name": "CampaignSignal",
+  "description": "Campaign intelligence software for signal-driven reports and actionable campaign memos.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f8fb",
+  "theme_color": "#172554",
+  "icons": [
+    {
+      "src": "/web-app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
