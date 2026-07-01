@@ -1833,6 +1833,26 @@ function Protected({ user, children }: { user: User | null; children: ReactEleme
   return children;
 }
 
+function SiteFooter() {
+  return (
+    <footer className="site-footer">
+      <div className="container site-footer-inner">
+        <div className="site-footer-copy">
+          <p className="site-footer-title">Campaign Toolkit</p>
+          <p className="muted-text">
+            Explore the campaign toolkit: Civicos Pro for candidate support and ElectionPredictor for race insight.
+          </p>
+        </div>
+        <div className="site-footer-links" aria-label="Campaign toolkit links">
+          <a href="https://civicos.pro">Civicos Pro</a>
+          <a href="https://electionpredictor.net/">ElectionPredictor</a>
+          <span className="current-site-label">Campaign Signal Studio</span>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
 function App() {
   const [user, setUser] = useLocalState<User | null>("css-demo-user", null);
 
@@ -1881,6 +1901,7 @@ function App() {
         />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      <SiteFooter />
     </>
   );
 }
