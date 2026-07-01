@@ -1819,9 +1819,9 @@ function SupportPage() {
         </article>
         <article className="card">
           <h3>Help channels</h3>
-          <p>Email: support@campaignsignalstudio.demo</p>
+          <p>Email: support@campaignsignal.us</p>
           <p>Office hours: Tue/Thu, 1-3pm ET</p>
-          <p>Status: All systems operational (demo)</p>
+          <p>Status: All systems operational</p>
         </article>
       </section>
     </main>
