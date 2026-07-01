@@ -1,0 +1,41 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev-workflow.mjs",
+    "dev:client": "vite",
+    "dev:server": "node --watch backend/server.js",
+    "dev:full": "node scripts/dev-workflow.mjs",
+    "build": "tsc -b && vite build",
+    "start:server": "node backend/server.js",
+    "db:neon:init": "node backend/scripts/neon-init.mjs",
+    "db:neon:sync": "node backend/scripts/neon-sync-from-sqlite.mjs",
+    "db:neon:verify": "node backend/scripts/neon-verify.mjs",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.11.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "openai": "^6.45.0",
+    "pg": "^8.16.3",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.1",
+    "stripe": "^22.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "oxlint": "^1.71.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1"
+  }
+}
